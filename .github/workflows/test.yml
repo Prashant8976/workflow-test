@@ -7,5 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: cowsay
+        run: sudo apt install cowsay
       - name: Print Hello
         run: echo "Hello from GitHub Actions!"
+      - name: cowsay1
+        run: cowsay Hello, world!

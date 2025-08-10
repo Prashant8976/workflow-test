@@ -1,1 +1,11 @@
-name:
+name: Simple Test
+
+on: push
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"

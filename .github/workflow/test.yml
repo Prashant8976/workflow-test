@@ -1,8 +1,11 @@
 name: Java CI
+
 on: [push]
+
 jobs:
   myjob:
-    reruns-on: ubuntu-latest
+    runs-on: ubuntu-latest
+
     steps:
       - name: firststep
         run: echo test
